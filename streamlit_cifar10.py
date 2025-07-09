@@ -12,8 +12,8 @@ import os
 # --- Define your CIFAR-10 classes ---
 # Ensure these classes match the order and names used during your model's training
 CIFAR10_CLASSES = (
-    "plane",
-    "car",
+    "airplane",
+    "automobile",
     "bird",
     "cat",
     "deer",
@@ -141,6 +141,7 @@ transform = transforms.Compose(
 # --- Streamlit app layout ---
 st.title("CIFAR-10 Image Classifier")
 st.write("Upload an image to get its classification.")
+st.write("Objects it can recognize: Cat, Dog, Bird, Frog, Deer, Horse, Airplane, Automobile, Truck, Ship")
 
 # File uploader widget for users to select an image
 uploaded_file = st.file_uploader(
